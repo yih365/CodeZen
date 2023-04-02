@@ -11,8 +11,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
-        android:text="CodeZen"
+        android:fontFamily="@font/homemade_apple"
+        android:text="@string/heading"
         android:textAlignment="center"
+        android:textColor="#EF476F"
         android:textSize="40sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -23,9 +25,11 @@
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
-        android:text="A quote in 20sp and #073b4c with 8dp padding.\n\n“Rest and be kind, you don’t have to prove anything.”\n – Jack Kerouac"
+        android:fontFamily="@font/amiko"
+        android:text="@string/mainQuote"
         android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="@+id/banner"
+        android:textAppearance="@style/TextAppearance.Quote"
         app:layout_constraintStart_toStartOf="@+id/banner"
         app:layout_constraintTop_toBottomOf="@+id/banner" />
 
@@ -34,8 +38,10 @@
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
-        android:text="“There are only two ways to live your life. One is as if nothing is a miracle. The other is as if everything is a miracle.”\n – Albert Einstein"
+        android:textAppearance="@style/TextAppearance.Quote"
+        android:text="@string/secondQuote"
         android:textAlignment="center"
+        android:fontFamily="@font/homemade_apple"
         app:layout_constraintEnd_toEndOf="@+id/mainQuote"
         app:layout_constraintStart_toStartOf="@+id/mainQuote"
         app:layout_constraintTop_toBottomOf="@+id/mainQuote" />
@@ -45,8 +51,12 @@
         android:layout_width="300dp"
         android:layout_height="50dp"
         android:layout_marginTop="8dp"
+        android:scaleType="centerInside"
+        android:scaleX="3.2"
+        android:scaleY="1.1"
         app:layout_constraintEnd_toEndOf="@+id/heading"
         app:layout_constraintStart_toStartOf="@+id/heading"
         app:layout_constraintTop_toBottomOf="@+id/heading"
-        app:srcCompat="@android:drawable/ic_menu_gallery" />
+        app:srcCompat="@drawable/zen"
+        tools:srcCompat="@drawable/zen" />
 </androidx.constraintlayout.widget.ConstraintLayout>
